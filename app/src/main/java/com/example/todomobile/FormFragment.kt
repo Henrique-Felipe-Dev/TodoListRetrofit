@@ -114,7 +114,7 @@ class FormFragment : Fragment(), TimePickerListener {
         val responsavel = binding.editResponsavel.text.toString()
         val data = binding.editData.text.toString()
         val status = binding.switchAtivoCard.isChecked
-        val categoria = Categoria(1, null, null)
+        val categoria = Categoria(categoriaSelecionada, null, null)
 
         if(validarCampos(nome, desc, responsavel, data)){
             if(tarefaSelecionada == null){
